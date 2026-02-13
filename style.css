@@ -8,3 +8,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 16px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-center {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
