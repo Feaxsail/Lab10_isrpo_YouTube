@@ -1,144 +1,202 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>YouTube Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-left">
-            <button>≡</button>
-            <div class="logo">
-                <span>▶️</span>
-                <span>YouTube</span>
-            </div>
+      <div class="header-left">
+        <button class="menu-btn">☰</button>
+        <div class="logo">
+          <span class="logo-icon">️▶️ </span>
+          <span class="logo-text">YouTube</span>
         </div>
+      </div>
 
-        <div class="header-center">
-            <input type="text" placeholder="Поиск" class="search-input" />
-            <button class="search-btn">🔍</button>
-        </div>
+      <div class="header-center">
+        <input type="text" placeholder="Поиск" class="search-input" />
+        <button class="search-btn">🔍</button>
+      </div>
 
-        <div class="header-right">
-            <button>➕</button>
-            <button>🔔</button>
-            <img src="https://placeholder.ru/32_" alt="Avatar" class="avatar" />
-        </div>
+      <div class="header-right">
+        <button class="action-btn">➕</button>
+        <button class="action-btn">🔔</button>
+        <img src="https://placeholder.ru/32" alt="Avatar" class="avatar" />
+      </div>
     </header>
-
     <div class="content">
-        <aside class="sidebar">
-            <nav>
-                <a href="#" class="active">🏠 Главная</a>
-                <a href="#">🔥 В тренде</a>
-                <a href="#">📫 Подписки</a>
-                <a href="#">📚 Библиотека</a>
-                <hr>
-                <a href="#">⏱️ История</a>
-                <a href="#">👍 Понравилось</a>
-            </nav>
-        </aside>
+      <aside class="sidebar">
+        <nav>
+          <a href="#" class="sidebar-link active">
+            <span class="icon">🏠</span>
+            <span>Главная</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <span class="icon">🔥</span>
+            <span>В тренде</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <span class="icon">✉️</span>
+            <span>Подписки</span>
+          </a>
+        </nav>
+        <hr />
+        <nav>
+          <a href="#" class="sidebar-link">
+            <span class="icon">📚</span>
+            <span>Библиотека</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <span class="icon">🕐</span>
+            <span>История</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <span class="icon">👍</span>
+            <span>Понравилось</span>
+          </a>
+        </nav>
+      </aside>
+      <main class="main">
+        <div class="chips">
+          <div class="chip active">Все</div>
+          <div class="chip">Музыка</div>
+          <div class="chip">Игры</div>
+          <div class="chip">Новости</div>
+          <div class="chip">Спорт</div>
+          <div class="chip">Образование</div>
+          <div class="chip">Технологии</div>
+        </div>
 
-        <main class="main">
-            <div class="chips">
-                <button class="chip active">Все</button>
-                <button class="chip">Музыка</button>
-                <button class="chip">Игры</button>
-                <button class="chip">Новости</button>
-                <button class="chip">Спорт</button>
-                <button class="chip">Образование</button>
-                <button class="chip">Технологии</button>
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <article class="video-card">
+            <div class="thumbnail">
+              <img src="img/17713227952879.png" alt="Video" />
+              <span class="duration">22:15</span>
             </div>
-
-            <div class="video-grid">
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://via.placeholder.com/280x158" alt="Video preview">
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://via.placeholder.com/36x36" alt="Channel avatar" class="channel-avatar">
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке Python</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">890 тыс. просмотров • 3 дня назад</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://via.placeholder.com/280x158" alt="Video preview">
-                        <span class="duration">15:30</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://via.placeholder.com/36x36" alt="Channel avatar" class="channel-avatar">
-                        <div class="video-details">
-                            <h3 class="video-title">Как создать адаптивный сайт с нуля</h3>
-                            <p class="channel-name">WebDev Pro</p>
-                            <p class="video-meta">1.2 млн просмотров • 1 неделю назад</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://via.placeholder.com/280x158" alt="Video preview">
-                        <span class="duration">8:45</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://via.placeholder.com/36x36" alt="Channel avatar" class="channel-avatar">
-                        <div class="video-details">
-                            <h3 class="video-title">CSS Grid полный курс 2026</h3>
-                            <p class="channel-name">IT Academy</p>
-                            <p class="video-meta">500 тыс. просмотров • 5 дней назад</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://via.placeholder.com/280x158" alt="Video preview">
-                        <span class="duration">42:10</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://via.placeholder.com/36x36" alt="Channel avatar" class="channel-avatar">
-                        <div class="video-details">
-                            <h3 class="video-title">JavaScript: основы для начинающих</h3>
-                            <p class="channel-name">LearnJS</p>
-                            <p class="video-meta">3 млн просмотров • 2 недели назад</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://via.placeholder.com/280x158" alt="Video preview">
-                        <span class="duration">12:20</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://via.placeholder.com/36x36" alt="Channel avatar" class="channel-avatar">
-                        <div class="video-details">
-                            <h3 class="video-title">Как работает Flexbox: полное руководство</h3>
-                            <p class="channel-name">CSS Masters</p>
-                            <p class="video-meta">750 тыс. просмотров • 3 дня назад</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://via.placeholder.com/280x158" alt="Video preview">
-                        <span class="duration">33:05</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://via.placeholder.com/36x36" alt="Channel avatar" class="channel-avatar">
-                        <div class="video-details">
-                            <h3 class="video-title">React для начинающих в 2026 году</h3>
-                            <p class="channel-name">Frontend Channel</p>
-                            <p class="video-meta">2.5 млн просмотров • 1 месяц назад</p>
-                        </div>
-                    </div>
-                </article>
+            <div class="video-info">
+              <img
+                src="img/17713227952879.png"
+                alt="Channel"
+                class="channel-avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Обучающее видео по программированию на языке Python
+                </h3>
+                <p class="channel-name">Code School</p>
+                <p class="video-meta">890 тыс. просмотров • 3 дня назад</p>
+              </div>
             </div>
-        </main>
+          </article>
+          <!-- Video 2 -->
+          <article class="video-card">
+            <div class="thumbnail">
+              <img src="img/1771322983273f.png" alt="Video" />
+              <span class="duration">4:20</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="img/1771322983273f.png"
+                alt="Channel"
+                class="channel-avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">Слоник собирает посылку в Колумбию</h3>
+                <p class="channel-name">Elefant</p>
+                <p class="video-meta">11 млн. просмотров • 1 час назад</p>
+              </div>
+            </div>
+          </article>
+          <!-- Video 3 -->
+          <article class="video-card">
+            <div class="thumbnail">
+              <img src="img/1771323203efce.png" alt="Video" />
+              <span class="duration">20:20</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="img/1771322983273f.png"
+                alt="Channel"
+                class="channel-avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Слоник собрался в Колумбию за поисками мамы
+                </h3>
+                <p class="channel-name">Elefant</p>
+                <p class="video-meta">9 млн. просмотров • 50 мин назад</p>
+              </div>
+            </div>
+          </article>
+          <!-- Video 4 -->
+          <article class="video-card">
+            <div class="thumbnail">
+              <img src="img/17713233398a00.png" alt="Video" />
+              <span class="duration">20:20</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="img/1771322983273f.png"
+                alt="Channel"
+                class="channel-avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Слоник прилетел в Колумбию и близок к разгадке
+                </h3>
+                <p class="channel-name">Elefant</p>
+                <p class="video-meta">8 млн. просмотров • 40 мин назад</p>
+              </div>
+            </div>
+          </article>
+          <!-- Video 5 -->
+          <article class="video-card">
+            <div class="thumbnail">
+              <img src="img/Elephant Photography Art.png" alt="Video" />
+              <span class="duration">20:20</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="img/1771322983273f.png"
+                alt="Channel"
+                class="channel-avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Слоник узнал правду про маму она....
+                </h3>
+                <p class="channel-name">Elefant</p>
+                <p class="video-meta">3 млн. просмотров • 30 мин назад</p>
+              </div>
+            </div>
+          </article>
+          <!-- Video 6 -->
+          <article class="video-card">
+            <div class="thumbnail">
+              <img src="img/Ограбление наркобарона.png" alt="Video" />
+              <span class="duration">20:20</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="img/1771322983273f.png"
+                alt="Channel"
+                class="channel-avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Мама слоника оказалась... наркобароном
+                </h3>
+                <p class="channel-name">Elefant</p>
+                <p class="video-meta">2 млн. просмотров • 20 мин назад</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
